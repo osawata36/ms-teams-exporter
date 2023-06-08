@@ -1,0 +1,51 @@
+{
+  "name": "teams-analyzer",
+  "version": "1.0.0",
+  "description": "teams-analyzer is a Metrics Viewer for Microsft Teams",
+  "author": "OsaWata",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=\"local\" nuxt",
+    "build": "cross-env NODE_ENV=\"production\" nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "export": "nuxt export",
+    "lint:js": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:prettier": "prettier -c .",
+    "lint:style": "stylelint **/*.{vue,css,scss} --ignore-path .gitignore",
+    "fix": "npm run lint:prettier -- --write; npm run lint:js -- --fix; npm run lint:style -- --fix",
+    "lint": "yarn lint:js",
+    "test": "jest --verbose"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.9.6",
+    "dexie": "^3.0.3",
+    "lodash": "^4.17.20",
+    "nuxt": "^2.14.6",
+    "vuex-persistedstate": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "jest": "^26.5.0",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "vue-jest": "^3.0.4",
+    "vuex-module-decorators": "^1.0.1"
+  }
+}
